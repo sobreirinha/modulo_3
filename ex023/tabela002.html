@@ -7,18 +7,34 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            background: url('img/mapa-br.jpg') no-repeat fixed center / 50%;
+            /*background-image: url('img/mapa-br.jpg');
+            background-size: 50%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;*/
+            
         }
         h1{
-            text-align: center;
+            background: rgba(31, 25, 25, 0.418);
+            color: yellow;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.884);
+            width: 300px;
+            margin: auto;
+            padding: 10px;
+            border-radius: 5px;
         }
         table{
             width: 500px;
             border-collapse: collapse;
             margin: auto;
+            box-shadow: 1px 1px 15px rgb(255, 255, 0);
         }
         td, th{
             border: 1px solid black;
             padding: 10px;
+            background-color: rgba(0, 0, 0, 0.411);
+            color: white;
         }
         thead, tfoot{
             background-color: gray;
@@ -35,9 +51,10 @@
     <table>
             <thead>
                 <tr>
+                    <th>Posição</th>
                     <th>Estado</th>
                     <th>População</th>
-                    <th>Posição</th>
+                    
                 </tr>
             </thead>
             <tbody>
