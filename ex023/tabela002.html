@@ -7,7 +7,7 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background: url('img/mapa-br.jpg') no-repeat fixed center / 50%;
+            background: url('img/mapa-br.jpg') no-repeat fixed center / 100%;
             /*background-image: url('img/mapa-br.jpg');
             background-size: 50%;
             background-attachment: fixed;
@@ -15,33 +15,65 @@
             background-repeat: no-repeat;*/
             
         }
+
         h1{
-            background: rgba(31, 25, 25, 0.418);
-            color: yellow;
+            background-color: rgb(148, 198, 243);
+            color: white;
             text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.884);
             width: 300px;
             margin: auto;
             padding: 10px;
             border-radius: 5px;
         }
+
         table{
-            width: 500px;
-            border-collapse: collapse;
+            width: 450px;
+            border-collapse: collapse; /*tira a borda de cada celula*/
             margin: auto;
-            box-shadow: 1px 1px 15px rgb(255, 255, 0);
+            box-shadow: 1px 1px 15px rgb(3, 3, 3);
+            position: relative;
         }
+
+        caption{
+            border: 1px solid black;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.89);
+            font-weight: bolder;
+            padding: 10px;
+            border-radius: 15px 15px 0 0;
+            box-shadow: 1px 1px 15px rgb(3, 3, 3);
+        }
+
         td, th{
             border: 1px solid black;
             padding: 10px;
-            background-color: rgba(0, 0, 0, 0.411);
-            color: white;
+            background-color: rgba(0, 0, 0, 0.301);
+            color: rgb(255, 255, 255);
+            font-weight: bolder;
         }
+
+        thead > tr, th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(0, 0, 0);;
+        }
+
+
         thead, tfoot{
             background-color: gray;
             color: white;
         }
+
+        tbody > tr:nth-child(2n) {
+            background-color: rgb(116, 113, 113);
+        }
+
         td.num{
             text-align: right;
+        }
+
+        .total{
+            text-align: center;
         }
     </style>
 </head>
@@ -49,11 +81,12 @@
     <h1>Estados do Brasil</h1>
 
     <table>
+        <caption>População por Unidades Federativos / Censo 2022</caption>
             <thead>
                 <tr>
-                    <th>Posição</th>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th cope="col" style="width: 50px;">Posição</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 45px;">População</th>
                     
                 </tr>
             </thead>
@@ -196,8 +229,8 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <td></td>
-                    <th>Total de habitantes</th>
+                    
+                    <td scope="row" colspan="2" class="total"><strong>Total de habitantes</strong></td>
                     <td class="num"><strong>203.062.512</strong></td>
                 </tr>
             </tfoot>
