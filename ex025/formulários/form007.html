@@ -14,8 +14,25 @@
                 <optgroup label="Sudeste">
                     <option value="SP">São Paulo</option>
                     <option value="RJ">Rio De janeiro</option>
+                    <option value="ES">Espirito Santo</option>
+                </optgroup>
+
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
                 </optgroup>
             </select>
+        </p>
+
+        <p>
+            <label for="iprof">Porfissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Admistrador</option>
+                <option value="PROF">Professor</option>
+                <option value="MEC">Mecanico</option>
+            </datalist>    
         </p>
         <p>
             <input type="submit" value="Enviar">
