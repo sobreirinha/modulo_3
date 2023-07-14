@@ -31,7 +31,7 @@ main{
 h1{
     text-align: center;
     font-size: 2em;
-    color: rgba(0, 0, 0, 0.925);
+    color: rgba(138, 45, 45, 0.925);
 }
 img{
     display: block;
@@ -40,6 +40,6 @@ img{
 #phone{
     display: block;
 }
-#tablet, #print, #tv, #pc{
+#tablet, #print, #tv, #pc, #tablet{
     display: none;
 }
