@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/media-query.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>ST</h1>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i> 
@@ -32,6 +32,16 @@
         </article>
     </main>
     <script>
+        //script do bug do menu quando clica no menu e ele desaparece quando aumenta a tela
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else {
+                intes.style.display = 'none'
+            }
+        }
+
+        //Script do menu
         function clickMenu(){
             if (itens.style.display == 'block'){
                 itens.style.display = 'none'
@@ -39,7 +49,6 @@
                 itens.style.display = 'block'
             }
         }
-
     </script>
 </body>
 </html>
