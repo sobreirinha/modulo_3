@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>ST</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i> 
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Teste 1</a></li>
+                <li><a href="#">Teste 2</a></li>
+                <li><a href="#">Teste 3</a></li>
+                <li><a href="#">Teste 4</a></li>
+                <li><a href="#">Teste 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+    
+            <h2>Testentado</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore inventore fugit sequi aperiam mollitia, maxime modi eos omnis ducimus harum accusantium dolores laboriosam explicabo porro, reiciendis veniam unde tenetur praesentium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste mollitia minus dignissimos earum consequuntur, laudantium, perspiciatis dolorem possimus porro eum voluptatum consequatur ducimus suscipit recusandae qui atque dolor cumque? Delectus!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore inventore fugit sequi aperiam mollitia, maxime modi eos omnis ducimus harum accusantium dolores laboriosam explicabo porro, reiciendis veniam unde tenetur praesentium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste mollitia minus dignissimos earum consequuntur, laudantium, perspiciatis dolorem possimus porro eum voluptatum consequatur ducimus suscipit recusandae qui atque dolor cumque? Delectus!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore inventore fugit sequi aperiam mollitia, maxime modi eos omnis ducimus harum accusantium dolores laboriosam explicabo porro, reiciendis veniam unde tenetur praesentium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste mollitia minus dignissimos earum consequuntur, laudantium, perspiciatis dolorem possimus porro eum voluptatum consequatur ducimus suscipit recusandae qui atque dolor cumque? Delectus!</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+    </script>
+</body>
+</html>
